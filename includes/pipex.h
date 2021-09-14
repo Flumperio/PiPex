@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/30 18:18:33 by juasanto          #+#    #+#             */
-/*   Updated: 2021/09/13 17:18:34 by jcsantos         ###   ########.fr       */
+/*   Updated: 2021/09/10 13:19:16 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@ typedef struct s_pip
 	char		*outfile;
 	int			fd_infile;
 	int			fd_outfile;
+	FILE		*original_stdout;
 	int			fd[2];
 	t_pid		pid;
 }				t_pip;

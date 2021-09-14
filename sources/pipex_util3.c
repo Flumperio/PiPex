@@ -6,7 +6,7 @@
 /*   By: jcsantos <jcsantos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/29 17:54:30 by jcsantos          #+#    #+#             */
-/*   Updated: 2021/09/13 17:18:34 by jcsantos         ###   ########.fr       */
+/*   Updated: 2021/09/09 17:25:18 by jcsantos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ char	*ft_strjoin_clean(char *s1, char *s2, int clean)
 	tmp = ft_strjoin(s1, s2);
 	if (clean == 1 || clean == 3)
 		free(s1);
-	if (clean == 2 || clean == 3)
+	else if (clean == 2 || clean == 3)
 		free(s2);
 	return (tmp);
 }
